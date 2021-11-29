@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import style from "./City.module.css";
 
-const APIKEY= '4ae2636d8dfbdc3044bede63951a019b';
+const APIKEY = process.env.REACT_APP_APIKEY;
 
 export default function City() {
   const [city, setCity] = useState(undefined);
   const {cityId: id} = useParams();
   useEffect(() => {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?id=${id}&appid=${APIKEY}&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?id=${id}&appid=${APIKEY}&units=metric`)
       .then(r => r.json())
       .then((recurso) => {
         if(recurso.main !== undefined){
