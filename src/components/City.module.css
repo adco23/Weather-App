@@ -1,0 +1,21 @@
+div > .ciudad{
+  width: calc(100% - 60px);
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.226);
+  backdrop-filter: blur(50px);
+  box-shadow: 0 0 8px 2px #6d61b33b;
+  
+  border-radius: 20px;
+}
+
+.container{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: #6d61b3;
+  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

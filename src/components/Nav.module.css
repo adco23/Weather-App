@@ -1,0 +1,24 @@
+.Navbar{
+  color: white;
+  width: calc(100% - 60px);
+  height: 40px;
+  /* background-color: black; */
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.imgWeather{
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+.NavTitle{
+  display: flex;
+  color: white;
+}
+
